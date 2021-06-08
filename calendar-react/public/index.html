@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    
-    <title>React Calendar</title>
-  </head>
+
+<html lang="en"><head>
+
+  <meta charset="UTF-8">
+  <title>CodePen Demo</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
   <body>
-    <div id="root"></div>
+  <div class="anim-container">
+      <div class="shutter top">
+          <div class="circle">
+            <div class="box" style="--rotateVal: 0deg"></div>
+            <div class="box" style="--rotateVal: 90deg"></div>
+            <div class="box" style="--rotateVal: 180deg"></div>
+            <div class="box" style="--rotateVal: 270deg"></div>
+          </div>
+          <div class="circle">
+            <div class="box" style="--rotateVal: 0deg"></div>
+            <div class="box" style="--rotateVal: 90deg"></div>
+            <div class="box" style="--rotateVal: 180deg"></div>
+            <div class="box" style="--rotateVal: 270deg"></div>
+          </div>
+          </div>
+          <div class="shutter bottom"></div>
+      </div>
+  </div>
+    <canvas id="bgCanvas"></canvas>
+    <script src="script.js"></script>
+    <div id="root" style="position: absolute;"><div>
+    
   </body>
 </html>
+
